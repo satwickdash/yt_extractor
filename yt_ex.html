@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8" >
+    <title>Youtube URL Extractor</title>
+    <!-- <link rel="stylesheet" href="spinner.css"> -->
+    <link rel="stylesheet" type="text/css" href="yt_ex.css">
+  </head>
+  <body>
+        <div class="header">
+            <div class="close">Close</div>
+        </div>
+		<div align="center">
+			<input type="text" placeholder="Enter Youtube URL" id="input_url" width="300"/>
+			<button id="btn_extract"> Get URL! </button>
+		</div>
+		<br><br>
+		<div id="loading_anim">
+			<div class="rotator_1">
+				<div class="spinner_circle">
+
+				</div>
+			</div>
+		</div>
+		<div id="thumb" align="center" style="display : none ;" >
+			<img id="thumbnail_image" height="240" width="320">
+		</div>
+
+		<div align="center" width="30%" id="urlist"></div>
+		<script type="text/javascript" src="extractor.js"></script>
+  </body>
+</html>

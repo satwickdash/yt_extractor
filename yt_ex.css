@@ -1,0 +1,62 @@
+html, body {
+    -webkit-app-region: drag;
+    background-color: #69AE10;
+}
+
+input, button, img {
+    -webkit-app-region: no-drag;
+    font-size: 15px;
+    font-family: "Helvetica", "Trebuchet MS" ;
+}
+
+input {
+    width: 250px;
+    padding: 10px ;
+    border: 1px solid #FBFFFF;
+    border-radius: 1px ;
+    transition: all 0.05s ease-in-out ;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #51cbee;
+}
+
+input:focus, #btn_extract:focus {
+    outline: none;
+}
+
+#btn_extract {
+    background-image: linear-gradient(#16E380, #12BD4E);
+    display: inline-block;
+    color: white ;
+    padding: 10px ;
+    border: none ;
+    border-radius: 2px ;
+    margin-left: 0 ;
+    transition: all 0.1s ease-in-out ;
+}
+
+#btn_extract:hover {
+    background-image: linear-gradient(#16E390, #12BD4E);
+    box-shadow: 0 0 10px #51abee;
+}
+
+.close {
+    background: transparent url('img/close.png') no-repeat 4px 4px;
+    background-size: 24px 24px;
+    right: 6px;
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    text-indent: -10000px;
+    top: 6px;
+    width: 32px;
+    z-index: 1;
+    -webkit-app-region: no-drag;
+}
+
+.header {
+    height: 100px ;
+    width: 100% ;
+}
